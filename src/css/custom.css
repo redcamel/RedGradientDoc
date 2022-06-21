@@ -1,0 +1,78 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+    --ifm-color-primary: #2e8555;
+    --ifm-color-primary-dark: #29784c;
+    --ifm-color-primary-darker: #277148;
+    --ifm-color-primary-darkest: #205d3b;
+    --ifm-color-primary-light: #33925d;
+    --ifm-color-primary-lighter: #359962;
+    --ifm-color-primary-lightest: #3cad6e;
+    --ifm-code-font-size: 95%;
+    --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+    --ifm-color-primary: #25c2a0;
+    --ifm-color-primary-dark: #21af90;
+    --ifm-color-primary-darker: #1fa588;
+    --ifm-color-primary-darkest: #1a8870;
+    --ifm-color-primary-light: #29d5b0;
+    --ifm-color-primary-lighter: #32d8b4;
+    --ifm-color-primary-lightest: #4fddbf;
+    --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+.introMain {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background: repeating-linear-gradient(60deg, #592675, #431060, #431f9a 60%, #592675 80%);
+    color: #fff;
+    padding: 4em 0;
+}
+
+
+.introMainTitle {
+    font-size: 5.5em;
+    font-weight: 700;
+    line-height: 1;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+@media screen and (max-width: 996px) {
+    .introMainTitle {
+        font-size: 4.1em;
+    }
+}
+
+.introMainDes {
+    margin: 1em 0 1.5em;
+    font-size: 1em;
+    color: rgba(255, 255, 255, 0.3);
+    text-align: center;
+}
+
+.introMainForkMe {
+    position: fixed;
+    z-index: 1;
+    top: 45px;
+    right: 0;
+    cursor: pointer
+}
+.introMainImgContainer {
+   padding: 4em 1em 1em;
+}
+.introMainImgContainer > img {
+    width: 100%;
+    max-width: 1150px;
+    box-shadow: 0 0 160px rgba(0, 0, 0, 0.5);
+}
