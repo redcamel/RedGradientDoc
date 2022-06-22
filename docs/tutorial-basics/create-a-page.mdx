@@ -5,18 +5,16 @@ sidebar_position: 1
 
 
 import ReactPlayer from 'react-player'
-
-<ReactPlayer playing controls url='./img/video/newProject.mp4'/>
-
+const t0 = require('@site/static/video/newProject.mp4').default
 
 # Create your first Project
+<ReactPlayer playing controls url={t0}  />
 
 ## 프로젝트 관리
 ![Create Project](./img/createProject.png)
   - ### 두가지 프로젝트 시작 모드를 지원합니다.
 - 새로운 프로젝트로 시작하기
 - 기존 프로젝트로 시작하기
-
 
 ## 새 프로젝트 만들기
 ![New Document](./img/newDocument.png)
