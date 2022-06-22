@@ -3,18 +3,18 @@
 
 name: build.js CI
 
-#on:
-#  push:
-#    branches: [ "master" ]
-#  pull_request:
-#    branches: [ "gh-pages" ]
-
 on:
   push:
-    branches:
-      - main
-    # 트리거, 경로 등을 추가로 정의하려면 gh action 문서를 참고하세요.
-    # https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#on
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "gh-pages" ]
+
+#on:
+#  push:
+#    branches:
+#      - main
+#    # 트리거, 경로 등을 추가로 정의하려면 gh action 문서를 참고하세요.
+#    # https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#on
 
 jobs:
   deploy:
