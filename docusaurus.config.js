@@ -10,7 +10,7 @@ const config = {
   tagline: 'All about Css gradient Edit.',
   url: 'https://redcamel.github.io/',
   baseUrl: '/RedGradientDoc/',
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
 
