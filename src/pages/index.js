@@ -34,7 +34,7 @@ function HomepageHeader() {
 
 				</div>
 				<div className={'introMainImgContainer'}>
-					<img src="./img/screenshot/Screenshot_1.png" alt="test"/>
+					<img src="./img/screenshot/Screenshot_1.png" alt=""/>
 				</div>
 			</div>
 		// </header>
