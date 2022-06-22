@@ -32,7 +32,19 @@ html, body {
   justify-content: center;
   gap :6px
 }
+video {
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #333;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
 
+img {
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #333;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
 
 /* 스크롤바 */
 ::-webkit-scrollbar {
