@@ -28,8 +28,10 @@
     --ifm-color-primary-lightest: #4fddbf;
     --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
-
-.table-of-contents li {
+.markdown{
+    font-size: 13px;
+}
+.markdown .table-of-contents li {
     list-style: decimal;
     font-size: 12px;
 }
