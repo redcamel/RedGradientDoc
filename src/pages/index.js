@@ -12,7 +12,7 @@ function HomepageHeader() {
 		// <header className={clsx('hero hero--primary', styles.heroBanner)}>
 			<div className="introMain">
 				<a href="https://github.com/redcamel/RedGradient" target="_blank" ><img src="./img/ForkMe.png" className={'introMainForkMe'}/></a>
-				<img src="./img/logo.svg" alt="" height="200"/>
+				<img src="./img/logo.svg" alt="" height="200" style={{boxShadow:'none',filter:'drop-shadow(0 0 20px rgba(0,0,0,0.5)',border : 0}}/>
 				<div className="introMainTitle">RedGradient</div>
 				<p className="introMainDes">
 					All about CSS gradient Edit. Design quickly and create your own gradients <br/>with a
@@ -28,7 +28,7 @@ function HomepageHeader() {
 					</Link>
 					<Link
 						className="button button--secondary button--lg"
-						to="/docs/intro">
+						to="https://red-gradient.com/build">
 						Try Now!
 					</Link>
 

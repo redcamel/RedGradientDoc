@@ -1,0 +1,8 @@
+{
+  "label": "Gradient Tab",
+  "position": 5,
+  "link": {
+    "type": "generated-index",
+    "description": "Gradient Layer 편집 탭. Gradient 세부 내용을 수정 편집할수있는 Panel의 모음입니다."
+  }
+}
