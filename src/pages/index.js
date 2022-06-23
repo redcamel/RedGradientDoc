@@ -11,7 +11,7 @@ function HomepageHeader() {
 	return (
 		// <header className={clsx('hero hero--primary', styles.heroBanner)}>
 			<div className="introMain">
-				<a href="https://github.com/redcamel/RedGradient" target="_blank" ><img src="./img/ForkMe.png" className={'introMainForkMe'}/></a>
+				<a href="https://github.com/redcamel/RedGradient" target="_blank" ><img src="./img/ForkMe.png" className={'introMainForkMe'} style={{boxShadow:'none',filter:'drop-shadow(0 0 20px rgba(0,0,0,0.5)',border : 0}}/></a>
 				<img src="./img/logo.svg" alt="" height="200" style={{boxShadow:'none',filter:'drop-shadow(0 0 20px rgba(0,0,0,0.5)',border : 0}}/>
 				<div className="introMainTitle">RedGradient</div>
 				<p className="introMainDes">
@@ -34,7 +34,7 @@ function HomepageHeader() {
 
 				</div>
 				<div className={'introMainImgContainer'}>
-					<img src="./img/screenshot/Screenshot_1.png" alt="test"/>
+					<img src="./img/screenshot/Screenshot_1.png" alt="test" />
 				</div>
 			</div>
 		// </header>
