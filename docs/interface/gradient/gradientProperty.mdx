@@ -2,6 +2,8 @@
 sidebar_position: 2
 ---
 
+import TOCInline from '@theme/TOCInline';
+
 # Gradient Property Panel
 
 <hr/>
@@ -12,14 +14,114 @@ Gradient Property Panel은 선택한 layer(gradient)의 속성에 대한 편집�
 
 <hr/>
 
-## Detail UI
-  - label
-  - gradient type
-  - repeat type
-  - blend mode
-  - angle
-  - ending shape
-  - size type
-  - at
-  - background size
-- background position
+<TOCInline toc={toc}/>
+
+<hr/>
+
+<hr/>
+
+### label
+레이어의 라벨을 수정합니다.
+<hr/>
+
+### gradient type
+![gradint_type](./img/gradient_type.png)
+
+그라디언트 타입을 설정합니다.
+
+- #### 지원타입
+	- linear-gradient
+	- repeating-linear-gradient
+	- radial-gradient
+	- repeating-radial-gradient
+	- conic-gradient
+	- repeating-conic-gradient
+
+<hr/>
+
+### repeat type
+![gradint_type](./img/gradient_type.png)
+
+그라디언트 반복 타입을 설정합니다.
+
+- #### 지원타입
+	- no-repeat
+	- repeat-x
+	- repeat-y
+	- repeat
+	- space
+	- round
+
+<hr/>
+
+### blend mode
+![gradint_type](./img/gradient_type.png)
+
+그라디언트 레이어의 블렌딩 타입을 설정합니다.
+
+- #### 지원타입
+- TODO
+- TODO
+
+<hr/>
+
+### angle
+![gradint_type](./img/gradient_type.png)
+
+그라디언트 angle을 설정합니다.
+
+
+<hr/>
+
+### ending shape (radial 전용)
+![gradint_type](./img/gradient_type.png)
+
+그라디언트 endingShape 타입을 설정합니다.
+
+- #### 지원타입
+- TODO
+- TODO
+
+<hr/>
+
+### size type (radial 전용)
+![gradint_type](./img/gradient_type.png)
+
+radial gradient의 size 타입을 설정합니다.
+
+- #### 지원타입
+- TODO
+- TODO
+
+<hr/>
+
+### at (radial, conic 전용)
+![gradint_type](./img/gradient_type.png)
+
+gradient의 중심값을 설정합니다.
+
+
+<hr/>
+
+### background size
+![gradint_type](./img/gradient_type.png)
+
+gradient의 사이즈를 설정합니다.
+
+- #### 지원타입
+	- px : 절대적인 사이즈입니다.
+	- % : 컨테이너 크기에 비례하는 사이즈입니다.
+
+<hr/>
+
+### background position
+![gradint_type](./img/gradient_type.png)
+
+gradient의 위치를 설정합니다.
+
+- #### 지원타입
+	- px : 절대적인 위치입니다.
+	- % : 컨테이너 크기에 비례하는 위치입니다.
+		-	gradient 타입에 따라 계산법이 다릅니다.
+
+<hr/>
