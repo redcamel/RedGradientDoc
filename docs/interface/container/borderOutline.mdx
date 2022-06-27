@@ -10,7 +10,6 @@ import TOCInline from '@theme/TOCInline';
 
 Border & Outline Panel은 Css가 표현될 Dom의 border와 outline 스타일을 편집을 위한 UI의 모음입니다.
 
-Main Container를 기반으로 Before, After Container를 모두 편집할 수 있습니다.
 
 <hr/>
 
@@ -19,32 +18,75 @@ Main Container를 기반으로 Before, After Container를 모두 편집할 수 �
 <hr/>
 
 ### outline
+![size](./img/border/ui_css_preview.png)
+
+- 컨테이너의 border와 outline style에 대한 css를 preview합니다.
 
 <hr/>
 
-## border - basic
+## border Mode
+![size](./img/border/ui_border_mode.png)
+
+- border는 두가지 모드를 지원합니다.
+  - **basic Mode** : 일반적인 단색 기반의 border
+  - **gradient Mode** : border-image(색상이) gradient 결과물로 이루어진 모드
+
+		:::info
+		- 단일 : gradient layer step 편집기를 제공합니다.
+		:::
+
+
+<hr/>
+
+## border Common UI
+- basic Mode와 gradient Mode 공용 UI 모음
 ### border radius
-- TODO
+- border-radius 스타일 편집기 입니다.
+- solo & merge Mode를 지원합니다.
+
+	|![size](./img/border/ui_border_radius.png)|![size](./img/border/ui_border_radius_solo.png)|
+	|:--|--:|
+	|Merge Mode|Solo Mode|
 
 <hr/>
 
 ### border width
-- TODO
+- border-width 스타일 편집기 입니다.
+- solo & merge Mode를 지원합니다.
+
+	|![size](./img/border/ui_border_width.png)|![size](./img/border/ui_border_width_solo.png)|
+	|:--|--:|
+	|Merge Mode|Solo Mode|
 
 <hr/>
+
+## border Basic UI
+- basic Mode 전용 UI 모음
 
 ### border color
-- TODO
+- border-color 스타일 편집기 입니다.
+- solo & merge Mode를 지원합니다.
+
+	|![size](./img/border/ui_border_color.png)|![size](./img/border/ui_border_color_solo.png)|
+	|:--|--:|
+	|Merge Mode|Solo Mode|
 
 <hr/>
 
+
 ### border style
-- TODO
+- border-style 스타일 편집기 입니다.
+- solo & merge Mode를 지원합니다.
+
+	|![size](./img/border/ui_border_style.png)|![size](./img/border/ui_border_style_solo.png)|
+	|:--|--:|
+	|Merge Mode|Solo Mode|
 
 <hr/>
 
 
 ## border - gradient
+- gradient Mode 전용 UI 모음
 ### border image outset
 - TODO
 
