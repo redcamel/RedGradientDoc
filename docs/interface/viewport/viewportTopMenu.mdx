@@ -3,7 +3,8 @@ sidebar_position: 1
 ---
 
 
-
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 import TOCInline from '@theme/TOCInline';
 
 # Viewport frame menu bar
@@ -29,24 +30,21 @@ Viewport 는 Viewport Window로 구성되어집니다.
 <hr/>
 
 
-### Single Mode
-![ui_viewport_single](./img/ui_viewport_single.png)
+<Tabs>
+	<TabItem value="Single" label="Single" default>
+		<img src={require('./img/ui_viewport_single.png').default}/>
+	</TabItem>
+	<TabItem value="Vertical" label="Vertical">
+		<img src={require('./img/ui_viewport_vertical.png').default}/>
+	</TabItem>
+	<TabItem value="Horizontal" label="Horizontal">
+		<img src={require('./img/ui_viewport_horizontal.png').default}/>
+	</TabItem>
+	<TabItem value="Triple" label="Triple">
+		<img src={require('./img/ui_viewport_triple.png').default}/>
+	</TabItem>
+</Tabs>
 
-
-<hr/>
-
-### Vertical Mode
-![ui_viewport_vertical](./img/ui_viewport_vertical.png)
-
-<hr/>
-
-### Horizontal Mode
-![ui_viewport_horizontal](./img/ui_viewport_horizontal.png)
-
-<hr/>
-
-### Triple Mode
-![ui_viewport_triple](./img/ui_viewport_triple.png)
 
 <hr/>
 
