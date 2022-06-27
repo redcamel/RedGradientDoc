@@ -15,7 +15,9 @@ const t2 = require('@site/static/video/RedGradient_CssGradientEditor-transformRa
 
 <hr/>
 
-Viewport Window
+Viewport Window는 실제 그라디언트를 화면상에 편집하기 위한 공간입니다.
+
+개별 뷰포트는 수정 할 Container 선택하고 해당 컨테이너를 기반으로 편집을 수행합니다.
 
 <hr/>
 
@@ -26,28 +28,60 @@ Viewport Window
 ## Viewport Window Menu
 ![ui_viewport_window_menu](./img/ui_viewport_window_menu.png)
 - #### 해당 뷰포트가 편집해야할 container를 지정합니다.
-	- Before Container
-	- Main Container
-	- After Container
+  - Before Container : css상의 ::before 공간을 의미합니다.
+
+		![ui_viewport_container_main](./img/ui_viewport_container_main.png)
+  - Main Container : css를 표현할 메인 Dom
+
+		![ui_viewport_container_before](./img/ui_viewport_container_before.png)
+  - After Container : css상의 ::after 공간을 의미합니다.
+
+		![ui_viewport_container_after](./img/ui_viewport_container_after.png)
+
+:::info
+RedGradient는 하나의 Dom에 표현될 그라디언트를 편집합니다.
+메인 Dom을 Main Container로 선언합니다.
+:::
 
 
 - #### 개별 Viewport Window의 view 상태를 설정합니다.
-  - Device Visible
-	- Ruler Visible
-	- Allow Overflow
-  - Container Background Color
+  - Device Visible : 가상 디바이스 표현 유무를 설정합니다.
+
+		![ui_viewport_device_off](./img/ui_viewport_device_off.png)
+		![ui_viewport_device_on](./img/ui_viewport_device_on.png)
+	- Ruler Visible :  가상 Ruler의 표현 유무를 설정합니다.
+
+		![ui_viewport_ruler_off](./img/ui_viewport_ruler_off.png)
+		![ui_viewport_ruler_on](./img/ui_viewport_ruler_on.png)
+	- Allow Overflow : 가상 디바이스 사이즈내로 overflow 허용 유무를 설정합니다.
+
+		![ui_viewport_overflow_hidden](./img/ui_viewport_overflow_hidden.png)
+		![ui_viewport_overflow_none](./img/ui_viewport_overflow_none.png)
+  - Container Background Color : 편집중인 Container의 배경색을 설정합니다.
+
+		![ui_viewport_color](./img/ui_viewport_color.png)
 
 <hr/>
 
-## Transform Mode UI
+## Edit Helper UI
 ![ui_viewport_window_transform_mode](./img/ui_viewport_window_transform_mode.png)
+
+개별 viewport window는 편집 편의를 위한 다양한 모드를 지원합니다.
+
+<hr/>
+
+## Transform Mode Helper
+- 해당 레이어의 편집 타겟을 설정합니다.
+  - container
+  - gradient
+  - border
+  - none
 ### Container Mode
-```text
-컨테이너 사이즈를 마우스 + 키보드를 통해 수정 할 수 있습니다.
-```
-- 단축키 : ```CTR + 1```
-- move
-- resize
+- 컨테이너 사이즈를 마우스 + 키보드를 통해 수정 할 수 있습니다.
+
+:::info
+단축키 : ```CTR + 1```
+:::
 
 [//]: # (![ui_transform_container]&#40;./img/ui_transform_container.png&#41;)
 <ReactPlayer
@@ -61,12 +95,11 @@ Viewport Window
 />
 
 ### Gradient Mode
-```text
-그라디언트 사이즈를 마우스 + 키보드를 통해 수정 할 수 있습니다.
-```
-- 단축키 : ```CTR + 2```
-- move
-- resize
+- 그라디언트 사이즈를 마우스 + 키보드를 통해 수정 할 수 있습니다.
+
+:::info
+단축키 : ```CTR + 2```
+:::
 
 [//]: # (![ui_transform_gradient]&#40;./img/ui_transform_gradient.png&#41;)
 <ReactPlayer
@@ -80,10 +113,11 @@ Viewport Window
 />
 
 ### Radius Mode
-```text
-컨테이더의 border-radius를 마우스를 통해 수정 할 수 있습니다.
-```
-- 단축키 : ```CTR + 3```
+- 컨테이더의 border-radius를 마우스를 통해 수정 할 수 있습니다.
+
+:::info
+단축키 : ```CTR + 3```
+:::
 
 [//]: # (![ui_transform_radius]&#40;./img/ui_transform_radius.png&#41;)
 <ReactPlayer
@@ -97,25 +131,35 @@ Viewport Window
 />
 
 ### None Mode
-```text
-Transform Editor 없이 현재 상태를 확인하고 싶을때 None 모드를 사용합니다.
-```
-- 단축키 : ```CTR + 4```
+- Transform Editor 없이 현재 상태를 확인하고 싶을때 None 모드를 사용합니다.
+
+:::info
+단축키 : ```CTR + 4```
+:::
 
 <hr/>
 
 
 ## With View
-- TODO
+![ui_viewport_with_view](./img/ui_viewport_with_view.png)
+
+- 현재 편집하고있는 대상 Container이외에 다른 컨테이너를 같이 보고 싶은 컨테이너를 설정합니다.
+- TODO with view 동영상 추가
+
+:::info
+with view에 설정된 container는 현재 뷰포트 윈도우에서 수정할 수 없습니다.
+:::
 <hr/>
 
 
 ## Visual Gradient editor
-- TODO
-
+- 그라디언트 비쥬얼 편집기를 사용할지 여부를 설정합니다.
+- 사용 설정시 현재 선택한 레이어의 타입에 따른 편집기를 제공합니다.
+- TODO 편집화면 추가
 <hr/>
 
 
 ## Snap to container
-- TODO
+- 그라디언트 사이즈 & 위치 변경시 container의 경계에 snap 시킬지 여부를 설정합니다.
+- TODO snap 동영상 추가
 
