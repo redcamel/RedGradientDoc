@@ -34,7 +34,9 @@ Gradient Step Panel은 선택한 layer(gradient)의 ```step```에 대한 편집�
 
 그라디언트가 실제 적용될때 ```시작 스텝```에 대한 ```오프셋값```을 설정합니다.
 :::info
-* 프리뷰에서는 적용되지 않습니다.
+- 프리뷰에서는 적용되지 않습니다.
+- px : ```절대적인``` 위치입니다.
+- % : 컨테이너, 레이어 사이즈 상태에 따른 ```상대적인``` 위치입니다.
 :::
 
 
@@ -44,18 +46,59 @@ Gradient Step Panel은 선택한 layer(gradient)의 ```step```에 대한 편집�
 ![step_helper_ui](./img/step/step_ui.png)
 
 ```step layer``` 편집을 위한 헬퍼 모음입니다.
+ - **add preset**
+	- ![step_add_preset](./img/step/step_add_preset.png) ```step list```를 ```local preset```에 저장합니다.
 
+ - **sort steps**
+	- ![step_sort_range](./img/step/step_sort_range.png) ```step list```내 아이템을 step 값을 기준으로 ```정렬합니다```.
+
+ - **reverse steps**
+   - ![step_reverse](./img/step/step_reverse.png) ```step list```내 아이템을 step 값을 기준으로 ```반전시킵니다```.
+
+ - **add step**
+	 - ![step_add](./img/step/step_add.png) ```step list```내 새로운 step을 ```추가합니다.```
 
 <hr/>
 
 ## step layer
 ![step layer](./img/step/step_item.png)
 
-```step value``` 설정 레이어
- - step의 ```색상```, ```위치```, ```위치 유닛```을 편집할 수 있습니다.
- - ```single```/```range``` mode를 지원합니다.
- - step layer ```복제``` 기능을 제공합니다.
- - TODO Division 설명
+```step value``` 설정 레이어. step의 ```색상```, ```위치```, ```위치 유닛```을 편집할 수 있습니다.
 
+ - **mode**
+   - ![step_mode](./img/step/step_mode.png) 단일 ```step```은  ```single```/```range``` mode를 지원합니다.
+
+	  |![step_mode_single](./img/step/step_mode_single.png)|![step_mode_range](./img/step/step_mode_range.png)|
+	  |:--|--:|
+	  |Single Mode|Range Mode|
+
+ - **delete**
+	 - ![step_trash](./img/step/step_trash.png) step layer ```삭제``` 기능을 제공합니다.
+
+ - **duplicate**
+	 - ![step_duplicate](./img/step/step_duplicate.png) step layer ```복제``` 기능을 제공합니다.
+
+
+ - **divide**
+	  - ![step_division](./img/step/step_divide.png) ![step_division](./img/step/step_divide_on.png) ```step``` 위치에서 그라디언트를 멈출 것인지 설정 합니다.
+
+		|![step_divide_none](./img/step/step_divide_none.png)|![step_mode_range](./img/step/step_divide_use.png)|
+		|:--|--:|
+		|divide 사용|divide 미사용|
+
+ - **color**
+ 	  - ![step_color](./img/step/step_color.png) step layer ```컬러```를 설정합니다.
+
+ - **unit**
+	:::info
+	- px : ```절대적인``` 위치입니다.
+	- % : ```상대적인``` 위치입니다.
+	- auto : 앞/뒤 step에 따른 ```자동 계산```된 위치 입니다.
+	:::
 
 <hr/>
+
+## step layer Drag Drop
+Drag & Drop으로 step간의 순서를 변경할수 있습니다.
+
+![step_drag](./img/step/step_drag.png)
