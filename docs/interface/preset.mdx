@@ -2,5 +2,47 @@
 sidebar_position: 7
 ---
 
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import TOCInline from '@theme/TOCInline';
+
 # Preset
-TODO -
+
+<hr/>
+
+RedGradient는 ```System Preset```과 ```User Preset```을 지원합니다.
+
+User Preset은 파일로 ```export/import``` 가능합니다.
+
+<hr/>
+
+<TOCInline toc={toc}/>
+
+<hr/>
+
+
+### 지원 Preset
+<Tabs>
+	<TabItem value="Border Gradient" label="Border Gradient" default>
+		<div style={{marginBottom:'6px'}}>border가 gradient mode일때 활성화 됩니다.</div>
+		<img src={require('./img/preset/preset_border.png').default}/>
+	</TabItem>
+	<TabItem value="Group" label="Group">
+		<div style={{marginBottom:'6px'}}>gradient layer를 관리할 수 있습니다.</div>
+		<img src={require('./img/preset/preset_layer.png').default}/>
+	</TabItem>
+	<TabItem value="Layer" label="Layer">
+		<div style={{marginBottom:'6px'}}>gradient group을 관리할 수 있습니다.</div>
+		<img src={require('./img/preset/preset_group.png').default}/>
+	</TabItem>
+</Tabs>
+
+
+
+
+## Preset System
+TODO
+
+
+<hr/>

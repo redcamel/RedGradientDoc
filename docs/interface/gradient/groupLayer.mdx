@@ -2,6 +2,11 @@
 sidebar_position: 1
 ---
 
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import TOCInline from '@theme/TOCInline';
+
 # Layer Panel
 
 <hr/>
@@ -12,24 +17,105 @@ Layer Panel은 해당 컨테이너에 속해있는 ```group```과 ```layer```의
 단축키 : ```F2``` 키를 통해 ```on/off``` 할 수 있습니다.
 :::
 
+
+
 <hr/>
 
-## Group Preview Size
-- TODO
+<TOCInline toc={toc}/>
+
+<hr/>
+
+## Group & Layer Preview Size
+그룹과 레이어 프리뷰 사이즈를 설정합니다.
+<Tabs>
+	<TabItem value="big" label="big" default>
+		<div style={{display: 'flex', flexDirection: 'column',width:'fit-content',gap:'2px',background:'#333',borderRadius : '8px',padding : '5px 4px 0px'}}>
+			<img src={require('./img/layer/layer_size_big.png').default}/>
+			<img src={require('./img/layer/group_big.png').default}/>
+		</div>
+	</TabItem>
+	<TabItem value="wide" label="wide">
+		<div style={{display: 'flex', flexDirection: 'column',width:'fit-content',gap:'2px',background:'#333',borderRadius : '8px',padding : '5px 4px 0px'}}>
+			<img src={require('./img/layer/layer_size_wide.png').default}/>
+			<img src={require('./img/layer/group_wide.png').default}/>
+		</div>
+	</TabItem>
+	<TabItem value="small" label="small">
+		<div style={{display: 'flex', flexDirection: 'column',width:'fit-content',gap:'2px',background:'#333',borderRadius : '8px',padding : '5px 4px 0px'}}>
+			<img src={require('./img/layer/layer_size_small.png').default}/>
+			<img src={require('./img/layer/group_small.png').default}/>
+		</div>
+	</TabItem>
+</Tabs>
+
 
 <hr/>
 
 ## Group Preview Background Color
-- TODO
+그룹 프리뷰 배경 컬러를 설정합니다.
+:::info
+**결과 Css에는 적용되지 않습니다.**
+:::
+<Tabs>
+	<TabItem value="white" label="white" default>
+		<div style={{display: 'flex', flexDirection: 'column',width:'fit-content',gap:'2px',background:'#333',borderRadius : '8px',padding : '5px 4px 0px'}}>
+			<img src={require('./img/layer/group_bg_white.png').default}/>
+			<img src={require('./img/layer/group_white.png').default}/>
+		</div>
+	</TabItem>
+	<TabItem value="black" label="black">
+		<div style={{display: 'flex', flexDirection: 'column',width:'fit-content',gap:'2px',background:'#333',borderRadius : '8px',padding : '5px 4px 0px'}}>
+			<img src={require('./img/layer/group_bg_black.png').default}/>
+			<img src={require('./img/layer/group_black.png').default}/>
+		</div>
+	</TabItem>
+	<TabItem value="transparent" label="transparent">
+		<div style={{display: 'flex', flexDirection: 'column',width:'fit-content',gap:'2px',background:'#333',borderRadius : '8px',padding : '5px 4px 0px'}}>
+			<img src={require('./img/layer/group_bg_transparent.png').default}/>
+			<img src={require('./img/layer/group_transparent.png').default}/>
+		</div>
+	</TabItem>
+</Tabs>
 
 <hr/>
 
 ## Group Item
-- TODO
+- #### visible
+- #### group on/off
+- #### group label
+- #### add layer
+- #### duplicate group
+- #### delete group
+- #### add preset
 
 <hr/>
 
 ## Layer Item
-- TODO
+- #### visible
+
+- #### layer label
+
+- #### preview bg color
+
+	레이어 프리뷰 배경 컬러를 설정합니다.
+	:::info
+	**결과 Css에는 적용되지 않습니다.**
+	:::
+
+- #### duplicate layer
+
+- #### delete layer
+
 
 <hr/>
+
+## Bottom Menu
+- #### add group
+- #### add layer
+- #### add duplicate layer
+- #### delete layer
+
+
+## Drag & Drop
+- Group간 Drag & Drop 지원
+- Layer간 Drag & Drop 지원
