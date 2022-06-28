@@ -71,14 +71,19 @@ const config = {
 						label: 'Tutorial',
 					},
 					{
+						href: 'https://red-gradient.com/build',
+						label: 'Try Now',
+						position: 'right',
+					},
+					{
 						href: 'https://github.com/redcamel/RedGradient/',
 						label: 'GitHub',
 						position: 'right',
 					},
-					{
-						type: 'localeDropdown',
-						position: 'right',
-					},
+					// {
+					// 	type: 'localeDropdown',
+					// 	position: 'right',
+					// },
 				],
 			},
 			footer: {
