@@ -8,9 +8,11 @@ import TOCInline from '@theme/TOCInline';
 
 <hr/>
 
-Gradient Property Panel은 선택한 layer(gradient)의 속성에 대한 편집기능을 제공합니다.
+Gradient Property Panel은 선택한 ```layer(gradient)의 속성```에 대한 편집기능을 제공합니다.
 
+:::info
 하나의 layer는 하나의 gradient와 동일 합니다.
+:::
 
 <hr/>
 
@@ -18,16 +20,16 @@ Gradient Property Panel은 선택한 layer(gradient)의 속성에 대한 편집�
 
 <hr/>
 
-<hr/>
-
 ### label
+![gradient_label](./img/gradient_label.png)
+
 레이어의 라벨을 수정합니다.
 <hr/>
 
 ### gradient type
 ![gradint_type](./img/gradient_type.png)
 
-그라디언트 타입을 설정합니다.
+그라디언트 ```타입```을 설정합니다.
 
 - #### 지원타입
 	- linear-gradient
@@ -40,9 +42,9 @@ Gradient Property Panel은 선택한 layer(gradient)의 속성에 대한 편집�
 <hr/>
 
 ### repeat type
-![gradint_type](./img/gradient_type.png)
+![gradient_repeat](./img/gradient_repeat.png)
 
-그라디언트 반복 타입을 설정합니다.
+그라디언트 ```반복 타입```을 설정합니다.
 
 - #### 지원타입
 	- no-repeat
@@ -55,73 +57,119 @@ Gradient Property Panel은 선택한 layer(gradient)의 속성에 대한 편집�
 <hr/>
 
 ### blend mode
-![gradint_type](./img/gradient_type.png)
+![gradient_blend_mode](./img/gradient_blend_mode.png)
 
-그라디언트 레이어의 블렌딩 타입을 설정합니다.
+그라디언트 레이어의 ```블렌딩 타입```을 설정합니다.
 
 - #### 지원타입
-- TODO
-- TODO
+  - normal
+  - multiply
+  - screen
+  - overlay
+  - darken
+  - lighten
+  - color-dodge
+  - color-burn
+  - hard-light
+  - soft-light
+  - difference
+  - exclusion
+  - hue
+  - saturation
+  - color
+  - luminosity
 
 <hr/>
 
-### angle
-![gradint_type](./img/gradient_type.png)
+### angle (linear, conic 전용)
+![gradient_angle](./img/gradient_angle.png)
 
-그라디언트 angle을 설정합니다.
+그라디언트 ```angle```을 설정합니다.
 
 
 <hr/>
 
 ### ending shape (radial 전용)
-![gradint_type](./img/gradient_type.png)
+![gradient_ending](./img/gradient_ending.png)
 
-그라디언트 endingShape 타입을 설정합니다.
+그라디언트 ```ending-shape```을 설정합니다. ```ending-shape```의 자세한 스펙은 [mdn](https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient)에서 확인하세요.
 
 - #### 지원타입
-- TODO
-- TODO
+   - ellipse
+   - circle
 
 <hr/>
 
 ### size type (radial 전용)
-![gradint_type](./img/gradient_type.png)
+![gradient_size_type](./img/gradient_size_type.png)
 
-radial gradient의 size 타입을 설정합니다.
+radial gradient의 ```size``` 타입 을 설정합니다. ```size```의 자세한 스펙은 [mdn](https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/radial-gradient)에서 확인하세요.
 
 - #### 지원타입
-- TODO
-- TODO
+  - farthest-corner
+	- farthest-side
+	- closest-corner
+	- closest-side
 
 <hr/>
 
 ### at (radial, conic 전용)
-![gradint_type](./img/gradient_type.png)
+![gradient_at](./img/gradient_at.png)
 
-gradient의 중심값을 설정합니다.
+gradient의 ```중심값```을 설정합니다.
 
+- #### Helper UI
+  - ```중심값```을 ```9개의 프리셋 위치```로 즉시 설정 할 수 있습니다.
+
+   ![gradient_at](./img/gradient_at_location.png)
+
+	- ```중심값```의 위치를 ```좌우/상하 반전```할 수 있습니다.
+
+		![gradient_at](./img/gradient_at_mirrow.png)
+
+:::info
+- px : ```절대적인``` 위치입니다.
+- % : 그라디언트  ```크기에 비례```하는 위치입니다.
+:::
 
 <hr/>
 
 ### background size
-![gradint_type](./img/gradient_type.png)
+![gradient_size](./img/gradient_size.png)
 
 gradient의 사이즈를 설정합니다.
 
-- #### 지원타입
-	- px : 절대적인 사이즈입니다.
-	- % : 컨테이너 크기에 비례하는 사이즈입니다.
+:::info
+- px : ```절대적인``` 사이즈입니다.
+- % : 컨테이너 ```크기에 비례```하는 사이즈입니다.
+:::
 
 <hr/>
 
 ### background position
-![gradint_type](./img/gradient_type.png)
+![gradient_position](./img/gradient_position.png)
 
-gradient의 위치를 설정합니다.
+gradient의 ```위치```를 설정합니다.
 
-- #### 지원타입
-	- px : 절대적인 위치입니다.
-	- % : 컨테이너 크기에 비례하는 위치입니다.
-		-	gradient 타입에 따라 계산법이 다릅니다.
+- #### Helper UI
+	- 컨테이너내 그라디언트의 ```위치```를 ```9개의 프리셋 위치```로 즉시 설정 할 수 있습니다.
+
+	![gradient_at](./img/gradient_at_location.png)
+
+	- 컨테이너내 그라디언트의 ```위치```를 ```좌우/상하 반전```할 수 있습니다.
+
+	![gradient_at](./img/gradient_at_mirrow.png)
+
+:::info
+- px : ```절대적인``` 위치입니다.
+- % : 컨테이너 ```크기에 비례```하는 위치입니다.
+	-	gradient 타입에 따라 계산법이 다릅니다.
+:::
+<hr/>
+
+### css preview
+![gradint_type](./img/gradient_css_preview.png)
+
+해당 레이어의 ```계산된 css```를 확인할 수 있습니다.
 
 <hr/>
