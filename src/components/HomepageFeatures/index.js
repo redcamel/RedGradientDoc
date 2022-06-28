@@ -8,8 +8,7 @@ const FeatureList = [
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        RedGradient는 코드 입력 없이 복잡한 그라디언트를 효율적으로 생산하기위해 제작되었습니다.
       </>
     ),
   },
@@ -23,16 +22,16 @@ const FeatureList = [
       </>
     ),
   },
-  {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
-    description: (
-      <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
-      </>
-    ),
-  },
+  // {
+  //   title: 'Powered by React',
+  //   Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+  //   description: (
+  //     <>
+  //       Extend or customize your website layout by reusing React. Docusaurus can
+  //       be extended while reusing the same header and footer.
+  //     </>
+  //   ),
+  // },
 ];
 
 function Feature({Svg, title, description}) {

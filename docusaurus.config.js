@@ -68,12 +68,12 @@ const config = {
 						type: 'doc',
 						docId: 'intro',
 						position: 'left',
-						label: 'Tutorial',
+						label: 'Document',
 					},
 					{
 						href: 'https://red-gradient.com/build',
 						label: 'Try Now',
-						position: 'right',
+						position: 'left',
 					},
 					{
 						href: 'https://github.com/redcamel/RedGradient/',
@@ -93,7 +93,7 @@ const config = {
 						title: 'Docs',
 						items: [
 							{
-								label: 'Tutorial',
+								label: 'Document',
 								to: '/docs/intro',
 							},
 						],
