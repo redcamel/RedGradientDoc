@@ -12,6 +12,7 @@ html, body {
 
 * {
   position: relative;
+
 }
 .heroBanner {
   padding: 4rem 0;
@@ -34,18 +35,19 @@ html, body {
 }
 
 video {
-  border-radius: 10px;
+  border-radius: 8px;
   overflow: hidden;
-  border: 1px solid #333;
+  /*border: 1px solid #333;*/
   box-shadow: 0 0 20px rgba(0,0,0,0.5);
 }
 
 img {
-  border-radius: 10px;
+  border-radius: 8px;
   overflow: hidden;
-  border: 1px solid #333;
-  box-shadow: 0 0 20px rgba(0,0,0,0.2);
-  vertical-align: top;
+  /*border: 1px solid #333;*/
+  box-sizing: content-box;
+  filter : drop-shadow(0 0 16px rgba(0,0,0,0.2));
+  vertical-align: middle;
 }
 
 hr {
