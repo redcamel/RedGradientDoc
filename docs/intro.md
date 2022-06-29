@@ -31,13 +31,13 @@ RedGradient는 이를 극복하고 그라디언트 표현을 한단계 끌어 �
 
 ### License
 
-LICENSE : [MIT](https://red-gradient.com/LICENSE.md)
+- LICENSE : [MIT](https://red-gradient.com/LICENSE.md)
 
 <hr/>
 
 ### Github
 
-Source : [Github](https://github.com/redcamel/RedGradient)
+- Source : [Github](https://github.com/redcamel/RedGradient)
 
 <hr/>
 
