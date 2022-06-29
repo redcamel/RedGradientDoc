@@ -53,9 +53,10 @@ const config = {
 	/** @type {import('@docusaurus/preset-classic').ThemeConfig} */
 		({
 			metadata: [
-        {name: 'keywords', content: 'css, gradient, editor'},
-        {name: 'description', content: 'Css Gradient Editor. All about CSS gradient Edit.'},
-      ],
+				{name: 'keywords', content: 'gradient, editor, css, RedGradient, generator'},
+				{name: 'author', content: 'RedCamel'},
+				{name: 'description', content: 'Css Gradient Editor. All about CSS gradient Edit.'},
+			],
 			navbar: {
 
 				title: 'RedGradient',
