@@ -3,8 +3,8 @@ sidebar_position: 2
 ---
 
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
+
+
 import TOCInline from '@theme/TOCInline';
 import ReactPlayer from 'react-player'
 const t0 = require('@site/static/video/RedGradient_CssGradientEditor-transformContainer.mp4').default
@@ -29,39 +29,32 @@ const t3 = require('@site/static/video/RedGradient_CssGradientEditor-viewportHel
 
 ## Viewport Window Menu
 ![ui_viewport_window_menu](./img/ui_viewport_window_menu.png)
+
 - #### 해당 뷰포트가 편집해야할 container를 지정합니다.
-  - **Before** Container : css상의 ```::before``` 공간을 의미합니다.
+- ![ui_viewport_container_main](./img/ui_viewport_container_before.png) **Before** Container : css상의 ```::before``` 공간을 의미합니다.
 
-		![ui_viewport_container_main](./img/ui_viewport_container_main.png)
-  - **Main** Container : css를 표현할 ```메인 Dom```
+- ![ui_viewport_container_before](./img/ui_viewport_container_main.png) **Main** Container : css를 표현할 ```메인 Dom```
 
-		![ui_viewport_container_before](./img/ui_viewport_container_before.png)
-  - **After** Container : css상의 ```::after``` 공간을 의미합니다.
+- ![ui_viewport_container_after](./img/ui_viewport_container_after.png) **After** Container : css상의 ```::after``` 공간을 의미합니다.
 
-		![ui_viewport_container_after](./img/ui_viewport_container_after.png)
+<hr/>
+
+- #### 개별 Viewport Window의 view 상태를 설정합니다.
+- ![ui_viewport_device_off](./img/ui_viewport_device_off.png) ![ui_viewport_device_on](./img/ui_viewport_device_on.png) **Device** Visible : ```가상 디바이스``` 표현 유무를 설정합니다.
+
+- ![ui_viewport_ruler_off](./img/ui_viewport_ruler_off.png) ![ui_viewport_ruler_on](./img/ui_viewport_ruler_on.png) **Ruler** Visible :  ```가상 Ruler```의 표현 유무를 설정합니다.
+
+- ![ui_viewport_overflow_hidden](./img/ui_viewport_overflow_hidden.png) ![ui_viewport_overflow_none](./img/ui_viewport_overflow_none.png) Allow **Overflow** : 가상 디바이스 사이즈내로 ```overflow 허용 유무```를 설정합니다.
+
+- ![ui_viewport_color](./img/ui_viewport_color.png) Container **Background Color** : 편집중인 ```Container의 배경색```을 설정합니다.
+
+<hr/>
 
 :::info
 RedGradient는 ```하나의 Dom에 표현될 그라디언트```를 편집합니다.
 메인 Dom을 ```Main Container```로 선언합니다.
 :::
 
-
-- #### 개별 Viewport Window의 view 상태를 설정합니다.
-  - **Device** Visible : ```가상 디바이스``` 표현 유무를 설정합니다.
-
-		![ui_viewport_device_off](./img/ui_viewport_device_off.png)
-		![ui_viewport_device_on](./img/ui_viewport_device_on.png)
-	- **Ruler** Visible :  ```가상 Ruler```의 표현 유무를 설정합니다.
-
-		![ui_viewport_ruler_off](./img/ui_viewport_ruler_off.png)
-		![ui_viewport_ruler_on](./img/ui_viewport_ruler_on.png)
-	- Allow **Overflow** : 가상 디바이스 사이즈내로 ```overflow 허용 유무```를 설정합니다.
-
-		![ui_viewport_overflow_hidden](./img/ui_viewport_overflow_hidden.png)
-		![ui_viewport_overflow_none](./img/ui_viewport_overflow_none.png)
-  - Container **Background Color** : 편집중인 ```Container의 배경색```을 설정합니다.
-
-		![ui_viewport_color](./img/ui_viewport_color.png)
 
 <ReactPlayer
 	playing
@@ -84,10 +77,11 @@ RedGradient는 ```하나의 Dom에 표현될 그라디언트```를 편집합니�
 
 ## Transform Mode Helper
 - 해당 레이어의 **편집 타겟을 설정**합니다.
-  - ```container```
-  - ```gradient```
-  - ```border```
-  - ```none```
+
+- ```container```
+- ```gradient```
+- ```border```
+- ```none```
 
 ### Container Mode
 - 컨테이너 사이즈를 ```마우스 + 키보드```를 통해 수정 할 수 있습니다.
@@ -96,7 +90,7 @@ RedGradient는 ```하나의 Dom에 표현될 그라디언트```를 편집합니�
 단축키 : ```CTR + 1```
 :::
 
-[//]: # (![ui_transform_container]&#40;./img/ui_transform_container.png&#41;)
+[//]  # (![ui_transform_container]&#40;./img/ui_transform_container.png&#41;)
 <ReactPlayer
 	playing
 	controls
@@ -114,7 +108,7 @@ RedGradient는 ```하나의 Dom에 표현될 그라디언트```를 편집합니�
 단축키 : ```CTR + 2```
 :::
 
-[//]: # (![ui_transform_gradient]&#40;./img/ui_transform_gradient.png&#41;)
+[//]  # (![ui_transform_gradient]&#40;./img/ui_transform_gradient.png&#41;)
 <ReactPlayer
 	playing
 	controls
@@ -132,7 +126,7 @@ RedGradient는 ```하나의 Dom에 표현될 그라디언트```를 편집합니�
 단축키 : ```CTR + 3```
 :::
 
-[//]: # (![ui_transform_radius]&#40;./img/ui_transform_radius.png&#41;)
+[//]  # (![ui_transform_radius]&#40;./img/ui_transform_radius.png&#41;)
 <ReactPlayer
 	playing
 	controls
