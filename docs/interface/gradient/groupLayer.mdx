@@ -4,7 +4,7 @@ sidebar_position: 1
 
 
 
-
+import ReactPlayer from 'react-player'
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 import TOCInline from '@theme/TOCInline';
@@ -218,4 +218,14 @@ Layer Panel은 해당 컨테이너에 속해있는 ```group```과 ```layer```의
 ## Drag & Drop
 - Group간 Drag & Drop 지원
 - Layer간 Drag & Drop 지원
+
+<ReactPlayer
+	playing
+	controls
+	url={require('@site/static/video/RedGradient_CssGradientEditor-dragdrop.mp4').default}
+	loop
+	width={'100%'}
+	height={'100%'}
+	playbackRate={1}
+/>
 <hr/>

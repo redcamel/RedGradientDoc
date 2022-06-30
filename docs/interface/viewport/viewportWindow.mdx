@@ -4,7 +4,8 @@ sidebar_position: 2
 
 
 
-
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 import TOCInline from '@theme/TOCInline';
 import ReactPlayer from 'react-player'
 const t0 = require('@site/static/video/RedGradient_CssGradientEditor-transformContainer.mp4').default
@@ -64,7 +65,7 @@ RedGradient는 ```하나의 Dom에 표현될 그라디언트```를 편집합니�
 	loop
 	width={'100%'}
 	height={'100%'}
-	playbackRate={1.5}
+	playbackRate={1.25}
 />
 
 <hr/>
@@ -101,7 +102,7 @@ RedGradient는 ```하나의 Dom에 표현될 그라디언트```를 편집합니�
 	loop
 	width={'100%'}
 	height={'100%'}
-	playbackRate={1.5}
+	playbackRate={1.25}
 />
 
  <hr/>
@@ -121,7 +122,7 @@ RedGradient는 ```하나의 Dom에 표현될 그라디언트```를 편집합니�
 	loop
 	width={'100%'}
 	height={'100%'}
-	playbackRate={1.5}
+	playbackRate={1.25}
 />
 
 <hr/>
@@ -141,7 +142,7 @@ RedGradient는 ```하나의 Dom에 표현될 그라디언트```를 편집합니�
 	loop
 	width={'100%'}
 	height={'100%'}
-	playbackRate={1.5}
+	playbackRate={1.25}
 />
 
 <hr/>
@@ -160,7 +161,6 @@ RedGradient는 ```하나의 Dom에 표현될 그라디언트```를 편집합니�
 ![ui_viewport_with_view](./img/ui_viewport_with_view.png)
 
 - 현재 편집하고있는 대상 Container이외에 다른 컨테이너를 같이 보고 싶은 컨테이너를 설정합니다.
-- TODO with view 동영상 추가
 
 :::info
 ```with view```에 설정된 container는 ```현재 뷰포트 윈도우에서 수정할 수 없습니다.```
@@ -169,13 +169,47 @@ RedGradient는 ```하나의 Dom에 표현될 그라디언트```를 편집합니�
 
 
 ## Visual Gradient editor
-- 그라디언트 ```비쥬얼 편집기를 사용할지 여부```를 설정합니다.
+- 그라디언트 ```비쥬얼 편집기 사용여부```를 설정합니다.
 - 사용 설정시 현재 선택한 레이어의 타입에 따른 편집기를 제공합니다.
-- TODO 편집화면 추가
+
+<Tabs>
+	<TabItem value="linear" label="linear" default>
+		<ReactPlayer
+			playing
+			controls
+			url={require('@site/static/video/RedGradient_CssGradientEditor-linear.mp4').default}
+			loop
+			width={'100%'}
+			height={'100%'}
+			playbackRate={1.25}
+		/>
+	</TabItem>
+	<TabItem value="radial" label="radial">
+		<ReactPlayer
+			playing
+			controls
+			url={require('@site/static/video/RedGradient_CssGradientEditor-radial.mp4').default}
+			loop
+			width={'100%'}
+			height={'100%'}
+			playbackRate={1.25}
+		/>
+	</TabItem>
+	<TabItem value="conic" label="conic">
+		<ReactPlayer
+			playing
+			controls
+			url={require('@site/static/video/RedGradient_CssGradientEditor-conic.mp4').default}
+			loop
+			width={'100%'}
+			height={'100%'}
+			playbackRate={1.25}
+		/>
+	</TabItem>
+</Tabs>
+
 <hr/>
 
 
 ## Snap to container
 - 그라디언트 사이즈 & 위치 변경시 ```container의 경계```에 ```snap``` 시킬지 여부를 설정합니다.
-- TODO snap 동영상 추가
-
