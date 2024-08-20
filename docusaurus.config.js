@@ -8,8 +8,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
 	title: 'RedGradient',
 	tagline: 'All about Css gradient Edit.',
-	url: 'https://redcamel.github.io/RedGradientDoc/',
-	baseUrl: '/',
+	url: 'https://redcamel.github.io/',
+	baseUrl: '/RedGradientDoc/',
 	onBrokenLinks: 'warn',
 	onBrokenMarkdownLinks: 'warn',
 	favicon: 'img/favicon.ico',
