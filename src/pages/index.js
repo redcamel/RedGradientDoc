@@ -28,7 +28,7 @@ function HomepageHeader() {
 					</Link>
 					<Link
 						className="button button--secondary button--lg"
-						to="https://red-gradient.com/build">
+						to="https://redcamel.github.io/RedGradient/build">
 						Try Now!
 					</Link>
 

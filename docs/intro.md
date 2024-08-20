@@ -12,7 +12,7 @@ sidebar_position: 1
 
 RedGradient는 이를 극복하고 그라디언트 표현을 한단계 끌어 올릴 수 있는 전문 그래픽툴 수준의 비쥬얼 에디팅을 제공합니다.
 
-[바로 시작하기](https://red-gradient.com/build)
+[바로 시작하기](https://redcamel.github.io/RedGradient/build)
 
 ![Main Ui System](/img/screenshot/Screenshot_1.png)
 
@@ -31,7 +31,7 @@ RedGradient는 이를 극복하고 그라디언트 표현을 한단계 끌어 �
 
 ### License
 
-- LICENSE : [MIT](https://red-gradient.com/LICENSE.md)
+- LICENSE : [MIT](https://redcamel.github.io/RedGradient/LICENSE.md)
 
 <hr/>
 
